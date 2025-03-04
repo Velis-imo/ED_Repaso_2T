@@ -38,7 +38,7 @@ public class Biblioteca {
     /**
      * Agrega un libro a la biblioteca
      * @param libro Un libro para agregar
-     *
+     * @see Libro
      * @return {@code true} si el libro se ha agregado correctamente o {@code false} si el libro NO se ha agregado
      * correctamente
      */

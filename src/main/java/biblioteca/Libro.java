@@ -1,7 +1,7 @@
 package biblioteca;
 
 /**
- * Clase que representa
+ * Clase que representa una biblioteca con una colección de libros
  */
 public class Libro {
 
