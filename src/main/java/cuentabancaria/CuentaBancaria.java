@@ -13,7 +13,7 @@ package cuentabancaria;
  *
  * @author Juan Pérez
  * @version 1.1
- * @see Cliente
+
  */
 public class CuentaBancaria {
 
