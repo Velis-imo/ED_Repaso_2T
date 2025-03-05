@@ -53,7 +53,6 @@ public class Biblioteca {
     }
 
     // TODO: Documentar este método
-
     /**
      * Devuelve la lista de libros de la biblioteca
      * @return lista de libros de la biblioteca
@@ -67,9 +66,9 @@ public class Biblioteca {
     //  Test 02: buscar libro NO existente y comprobar que no lo localiza.
 
     /**
-     *
-     * @param titulo
-     * @return
+     * Busca y devuelve un libro específico en la colección de libros basándose en su título.
+     * @param titulo el nombre del libro a buscar en la colleccion
+     * @return si se ha encontrado o no en la coleccion
      */
     public Libro encuentraLibroPorTitulo(String titulo) {
         for (Libro libro : libros) {
@@ -83,9 +82,9 @@ public class Biblioteca {
     // TODO: Documentar este metodo.
     //  No testearlo
     // Este metodo está obsoleto. Hay que documentarlo como tal.
-    //  Recuerda: las anotaciones @deprecated y @link a la nueva
-    //  versión mejorada encuentraLibrosPorAutor(...)
-    //  En esta ocasión, NO TESTEAREMOS este metodo
+    // Se añaden las anotaciones @deprecated y @link a la nueva
+    // versión mejorada encuentraLibrosPorAutor(...)
+    // En esta ocasión, NO TESTEAREMOS este metodo
 
     /**
      * @deprecated  Este metodo ha quedado obsoleto

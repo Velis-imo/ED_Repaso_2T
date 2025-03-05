@@ -19,37 +19,48 @@ class BibliotecaTest {
 
     @Test
     void agregarLibro() {
-        assertTrue(biblioteca.agregarLibro(this.libro));
+        assertTrue(biblioteca.agregarLibro(libro));
     }
 
     @Test
     void eliminarLibro() {
 
-        biblioteca.agregarLibro(this.libro);
-        assertTrue(biblioteca.eliminarLibro(this.libro));
-
-
+        biblioteca.agregarLibro(libro);
+        assertTrue(biblioteca.eliminarLibro(libro));
     }
 
     @Test
     void getLibros() {
+
+
     }
 
     @Test
     void encuentraLibroPorTitulo() {
+        biblioteca.agregarLibro(libro);
+        biblioteca.encuentraLibroPorTitulo("The Art of Computer Programming");
+        assertEquals(
+                "The Art of Computer Programming", libro.getTitulo(),
+                "El titulo del libro debe coincidir");
 
     }
 
+
+
+
     @Test
     void encuentaLibroPorAutor() {
+        biblioteca.agregarLibro(libro);
+        biblioteca.encuentraLibrosPorAutor("Donald Knuth");
 
-
+        assertEquals(
+                "Donald Knuth", libro.getAutor(), "El autor del libro debe coincidir");
     }
 
     @Test
     void encuentraLibrosPorAutor() {
 
-        biblioteca.agregarLibro(this.libro);
+        biblioteca.agregarLibro(libro);
 
         //no esta vaciá
         assertNotNull(biblioteca.getLibros());
@@ -58,7 +69,7 @@ class BibliotecaTest {
         assertEquals(1, biblioteca.getLibros().size());
 
         //contiene el libro recien añadido
-        assertTrue(biblioteca.getLibros().contains(this.libro));
+        assertTrue(biblioteca.getLibros().contains(libro));
     }
 
 
