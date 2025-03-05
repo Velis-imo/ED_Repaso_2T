@@ -1,7 +1,13 @@
 package biblioteca;
 
+// TODO: Documentar esta clase
 /**
- * Clase que representa una biblioteca con una colección de libros
+ * Clase que representa un libro con atributos básicos:
+ * título, autor y año de publicación.
+ *
+ * @author Velis Krassenov
+ * @version 05/03/2025
+
  */
 public class Libro {
 
