@@ -31,10 +31,8 @@ public class Libro {
      */
     private int anioPublicacion;
 
-
-    // TODO: Documentar este método
-
     // TODO: Testear este método
+    // TODO: Documentar este método
     /**
      * Constructor de la clase Libro que crea una nueva instancia del libro.
      *
