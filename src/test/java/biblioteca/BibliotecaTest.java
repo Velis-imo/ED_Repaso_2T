@@ -15,7 +15,7 @@ class BibliotecaTest {
 
     @BeforeEach
     void setUp() {
-        Libro libro = new Libro("The Art of Computer Programming", "Donald Knuth", 1968);
+         libro = new Libro("The Art of Computer Programming", "Donald Knuth", 1968);
     }
 
     @Test
@@ -25,6 +25,11 @@ class BibliotecaTest {
 
     @Test
     void eliminarLibro() {
+
+        biblioteca.agregarLibro(this.libro);
+        assertTrue(biblioteca.eliminarLibro(this.libro));
+
+
     }
 
     @Test
@@ -33,25 +38,32 @@ class BibliotecaTest {
 
     @Test
     void encuentraLibroPorTitulo() {
+
     }
 
     @Test
     void encuentaLibroPorAutor() {
+
+
     }
 
     @Test
     void encuentraLibrosPorAutor() {
-        Biblioteca biblio = new Biblioteca();
-        biblio.agregarLibro(this.libro);
+
+        biblioteca.agregarLibro(this.libro);
 
         //no esta vaciá
-        assertNotNull(biblio.getLibros());
+        assertNotNull(biblioteca.getLibros());
 
         //solo tiene un libro:
-        assertEquals(1, biblio.getLibros().size());
+        assertEquals(1, biblioteca.getLibros().size());
 
         //contiene el libro recien añadido
-        assertTrue(biblio.getLibros().contains(this.libro));
+        assertTrue(biblioteca.getLibros().contains(this.libro));
     }
+
+
+
+
 
 }
