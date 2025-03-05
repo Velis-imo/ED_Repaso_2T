@@ -31,7 +31,7 @@ public class Libro {
      */
     private int anioPublicacion;
 
-    // TODO: Testear este método
+
     // TODO: Documentar este método
     /**
      * Constructor de la clase Libro que crea una nueva instancia del libro.
@@ -45,11 +45,16 @@ public class Libro {
      * @version 05/03/2025
      *
      */
+    // TODO: Testear este método
     public Libro(String titulo, String autor, int anioPublicacion) {
+        if (titulo == null || autor == null || anioPublicacion < 0) {
+            throw new NullPointerException("Tanto título como autor no pueden ser nulo");
+        }
         this.titulo = titulo;
         this.autor = autor;
         this.anioPublicacion = anioPublicacion;
     }
+
 
     public String getTitulo() {
         return titulo;
