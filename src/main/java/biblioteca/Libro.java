@@ -47,8 +47,8 @@ public class Libro {
      */
     // TODO: Testear este método
     public Libro(String titulo, String autor, int anioPublicacion) {
-        if (titulo == null || autor == null || anioPublicacion < 0) {
-            throw new NullPointerException("Tanto título como autor no pueden ser nulo");
+        if (titulo == null || autor == null || anioPublicacion == 0) {
+            throw new NullPointerException("Constructor no puede ser nulo");
         }
         this.titulo = titulo;
         this.autor = autor;
